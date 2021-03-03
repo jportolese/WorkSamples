@@ -1,0 +1,19 @@
+ogr2ogr -f "ESRI Shapefile" "N:\GIS_Files\US_OFC_SUB.shp" 
+"MSSQL:server=XXXXXXXX;database=XXXXXX;;trusted_connection=yes;" -sql "Select * from dbo.us_ofc_sub_forshapefile" 
+-overwrite --config MSSQLSPATIAL_USE_GEOMETRY_COLUMNS NO
+
+ogr2ogr -f "ESRI Shapefile" "N:\GIS_Files\US_IND_SUB.shp" 
+"MSSQL:server=XXXXXXXX;database=XXXXXX;trusted_connection=yes;" -sql "Select * from dbo.us_IND_sub_forshapefile" 
+-overwrite --config MSSQLSPATIAL_USE_GEOMETRY_COLUMNS NO
+
+ogr2ogr -f "ESRI Shapefile" "N:\GIS_FILES\US_HTL_SUB.shp" 
+"MSSQL:server=XXXXXXXX;database=XXXXXX;trusted_connection=yes;" -sql "Select * from dbo.us_htl_sub_forshapefile"
+ -overwrite --config MSSQLSPATIAL_USE_GEOMETRY_COLUMNS NO
+
+ogr2ogr -f "ESRI Shapefile" "N:\GIS Files\US_APT_SUB.shp" 
+"MSSQL:server=XXXXXXXX;database=XXXXXX;trusted_connection=yes;" -sql "Select * from dbo.us_apt_sub_forshapefile" 
+-overwrite --config MSSQLSPATIAL_USE_GEOMETRY_COLUMNS NO
+
+ogr2ogr -f "ESRI Shapefile" "N:\GIS_Files\US_RTL_SUB.shp" 
+"MSSQL:server=XXXXXXXX;database=XXXXXX;;trusted_connection=yes;" -sql "Select * from dbo.us_rtl_sub_forshapefile" 
+-overwrite --config MSSQLSPATIAL_USE_GEOMETRY_COLUMNS NO
